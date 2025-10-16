@@ -1,0 +1,160 @@
+{
+  "$type": "ThunderRoad.ItemData, ThunderRoad",
+  "id": "Lightsaber_Sentinel_Blue",
+  "version": 4,
+  "localizationId": "Lightsaber_Sentinel_Blue",
+  "displayName": "Sentinel Lightsaber (Blue)",
+  "description": "The Sentinel was a basic design of lightsaber hilt that was used by Jedi Initiates as well as Knights of the New Jedi Order.",
+  "author": "Kingo64",
+  "valueType": "Gold",
+  "value": 0,
+  "rewardValue": 0.0,
+  "tier": 0,
+  "flags": "Spinnable",
+  "levelRequired": 0,
+  "category": "Outcome Expansion: Lightsabers",
+  "iconEffectId": null,
+  "preferredItemCenter": "Mass",
+  "drainImbueWhenIdle": true,
+  "prefabAddress": "theouterrim_lightsabers.Lightsaber_Sentinel",
+  "iconAddress": "theouterrim_lightsabers.Lightsaber_Sentinel.Icon",
+  "closeUpIconAddress": "theouterrim_lightsabers.Lightsaber_Sentinel.IconClose",
+  "pooledCount": 0,
+  "androidPooledCount": 0,
+  "type": "Weapon",
+  "allowedStorage": "Container, SandboxAllItems",
+  "despawnOnStoredInInventory": false,
+  "isStackable": false,
+  "consumableId": null,
+  "slot": "Medium",
+  "snapAudioContainerAddress": null,
+  "overrideMassAndDrag": true,
+  "mass": 1.0,
+  "drag": 1.0,
+  "angularDrag": 0.05,
+  "focusRegenMultiplier": 1.0,
+  "spellChargeSpeedPlayerMultiplier": 1.0,
+  "spellChargeSpeedNPCMultiplier": 1.0,
+  "collisionMaxOverride": 0,
+  "collisionEnterOnly": false,
+  "collisionNoMinVelocityCheck": false,
+  "forceLayer": "None",
+  "diffForceLayerWhenHeld": false,
+  "forceLayerHeld": "None",
+  "throwMultiplier": 1.0,
+  "runSpeedMultiplier": 1.0,
+  "flyRotationSpeed": 30.0,
+  "flyThrowAngle": 0.0,
+  "allowFlyBackwards": false,
+  "telekinesisSafeDistance": 1.0,
+  "telekinesisThrowRatio": 1.0,
+  "telekinesisAutoGrabAnyHandle": false,
+  "grippable": false,
+  "grabAndGripClimb": false,
+  "playerGrabAndGripChangeLayer": true,
+  "customSnaps": [],
+  "drainImbueOnSnap": true,
+  "modules": [
+    {
+      "$type": "TOR.ItemModuleLightsaber, TheOuterRim",
+      "canThrow": true,
+      "ignitionDuration": 0.1,
+      "primaryGripPrimaryAction": "",
+      "primaryGripSecondaryAction": "toggleIgnition",
+      "lightsaberBlades": [
+        {
+          "$type": "TOR.LightsaberBlade, TheOuterRim",
+          "bladeLength": 0.9,
+          "kyberCrystal": "KyberCrystalBlue",
+          "collisionRef": "CollisionBlade",
+          "crystalEjectRef": "CrystalEject",
+          "saberBodyRef": "SaberBody",
+          "saberTipGlowRef": "SaberTipGlow",
+          "saberGlowRef": "SaberGlow",
+          "startSoundsRef": "StartSounds",
+          "stopSoundsRef": "StopSounds",
+          "whooshRef": "WhooshBlade"
+        }
+      ]
+    },
+    {
+      "$type": "ThunderRoad.ItemModuleAI, ThunderRoad",
+      "primaryClass": "Melee",
+      "secondaryClass": "None",
+      "weaponHandling": "OneHanded",
+      "secondaryHandling": "None",
+      "weaponAttackTypes": "Swing, Thrust",
+      "ignoredByDefense": false,
+      "alwaysPrimary": false,
+      "defaultStanceInfo": {
+        "$type": "ThunderRoad.ItemModuleAI+StanceInfo, ThunderRoad",
+        "offhand": "Anything",
+        "grabAIHandleRadius": 0.0,
+        "stanceDataID": "HumanMelee1hStance"
+      },
+      "stanceInfosByOffhand": [
+        {
+          "$type": "ThunderRoad.ItemModuleAI+StanceInfo, ThunderRoad",
+          "offhand": "Empty",
+          "grabAIHandleRadius": 0.0,
+          "stanceDataID": "HumanMelee1hStance"
+        },
+        {
+          "$type": "ThunderRoad.ItemModuleAI+StanceInfo, ThunderRoad",
+          "offhand": "AnyShield",
+          "grabAIHandleRadius": 0.0,
+          "stanceDataID": "HumanMeleeShieldStance"
+        },
+        {
+          "$type": "ThunderRoad.ItemModuleAI+StanceInfo, ThunderRoad",
+          "offhand": "AnyMelee",
+          "grabAIHandleRadius": 0.0,
+          "stanceDataID": "HumanMeleeDualWieldStance"
+        }
+      ],
+      "rangedWeaponData": null,
+      "armResistanceMultiplier": 3.0,
+      "allowDynamicHeight": false,
+      "defenseHasPriority": false
+    }
+  ],
+  "colliderGroups": [
+    {
+      "transformName": "CollisionHilt",
+      "colliderGroupId": "BladeMace"
+    }
+  ],
+  "damagers": [
+    {
+      "transformName": "DamagerBladeStab",
+      "damagerID": "LightsaberPierce"
+    },
+    {
+      "transformName": "DamagerBlade",
+      "damagerID": "LightsaberSlash"
+    },
+    {
+      "transformName": "DamagerHilt",
+      "damagerID": "HandleLight"
+    }
+  ],
+  "Interactables": [
+    {
+      "transformName": "HandleHilt",
+      "interactableId": "ObjectHandleLightsaber",
+      "overrideHandPose": false,
+      "handPoseId": ""
+    }
+  ],
+  "effectHinges": [],
+  "whooshs": [
+    {
+      "transformName": "WhooshBlade",
+      "effectId": "WhooshLightsaberBlue",
+      "trigger": "Always",
+      "stopOnSnap": true,
+      "minVelocity": 1.0,
+      "maxVelocity": 20.0
+    }
+  ]
+}
