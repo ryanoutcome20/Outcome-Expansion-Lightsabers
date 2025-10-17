@@ -1,10 +1,10 @@
 {
   "$type": "ThunderRoad.ItemData, ThunderRoad",
-  "id": "Lightsaber_AhsokaShotoTCWFullLength",
+  "id": "Lightsaber_AhsokaShoto2FullLength",
   "version": 4,
-  "localizationId": "Lightsaber_AhsokaShotoTCWFullLength",
-  "displayName": "Ahsoka Tano's Shoto Lightsaber (TCW - Full Length)",
-  "description": "Ahsoka Tano's shoto lightsaber was built during the Clone Wars to be used as an off-hand to her standard lightsaber.",
+  "localizationId": "Lightsaber_AhsokaShoto2FullLength",
+  "displayName": "Ahsoka Tano's Shoto Lightsaber (2nd - Full Length)",
+  "description": "Ahsoka Tano's second shoto lightsaber was built during the Jedi Purge out of scrap parts.",
   "author": "Ryan H.",
   "valueType": "Gold",
   "value": 0,
@@ -16,9 +16,9 @@
   "iconEffectId": null,
   "preferredItemCenter": "Mass",
   "drainImbueWhenIdle": true,
-  "prefabAddress": "theouterrim_lightsabers.Lightsaber_AhsokaShoto",
-  "iconAddress": "theouterrim_lightsabers.Lightsaber_AhsokaShoto.Icon",
-  "closeUpIconAddress": "theouterrim_lightsabers.Lightsaber_AhsokaShoto.IconClose",
+  "prefabAddress": "theouterrim_lightsabers.Lightsaber_AhsokaShoto2",
+  "iconAddress": "theouterrim_lightsabers.Lightsaber_AhsokaShoto2.Icon",
+  "closeUpIconAddress": "theouterrim_lightsabers.Lightsaber_AhsokaShoto2.IconClose",
   "pooledCount": 0,
   "androidPooledCount": 0,
   "type": "Weapon",
@@ -65,7 +65,7 @@
         {
           "$type": "TOR.LightsaberBlade, TheOuterRim",
           "bladeLength": 0.9,
-          "kyberCrystal": "KyberCrystalYellowGreen",
+          "kyberCrystal": "KyberCrystalWhite",
           "collisionRef": "CollisionBlade",
           "crystalEjectRef": "CrystalEject",
           "saberBodyRef": "SaberBody",
@@ -144,13 +144,19 @@
       "interactableId": "ObjectHandleLightsaber",
       "overrideHandPose": false,
       "handPoseId": ""
+    },
+    {
+      "transformName": "HandleHilt2",
+      "interactableId": "ObjectHandleLightsaber",
+      "overrideHandPose": false,
+      "handPoseId": ""
     }
   ],
   "effectHinges": [],
   "whooshs": [
     {
       "transformName": "WhooshBlade",
-      "effectId": "WhooshLightsaberGreen",
+      "effectId": "WhooshLightsaberWhite",
       "trigger": "Always",
       "stopOnSnap": true,
       "minVelocity": 1.0,
