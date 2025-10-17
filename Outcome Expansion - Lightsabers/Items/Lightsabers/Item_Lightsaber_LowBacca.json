@@ -1,10 +1,10 @@
 {
   "$type": "ThunderRoad.ItemData, ThunderRoad",
-  "id": "Lightsaber_DarkHelmetRing_OS",
+  "id": "Lightsaber_LowBacca",
   "version": 4,
-  "localizationId": "Lightsaber_DarkHelmetRing_OS",
-  "displayName": "Dark Helmet Ring",
-  "description": "Can produce a lightsaber-like beam using the power of the Schwartz.",
+  "localizationId": "Lightsaber_LowBacca",
+  "displayName": "Low Bacca's Lightsaber",
+  "description": "Lightsaber of the Wookiee Jedi Knight Lowbacca. It constructed using computer components found in the Great Temple on the moon on Yavin 4.",
   "author": "Ryan H.",
   "valueType": "Gold",
   "value": 0,
@@ -16,9 +16,9 @@
   "iconEffectId": null,
   "preferredItemCenter": "Mass",
   "drainImbueWhenIdle": true,
-  "prefabAddress": "theouterrim_lightsabers.Lightsaber_DarkHelmetRing",
-  "iconAddress": "theouterrim_lightsabers.Lightsaber_DarkHelmetRing.Icon",
-  "closeUpIconAddress": null,
+  "prefabAddress": "theouterrim_lightsabers.Lightsaber_AaylaSecura",
+  "iconAddress": "theouterrim_lightsabers.Lightsaber_AaylaSecura.Icon",
+  "closeUpIconAddress": "theouterrim_lightsabers.Lightsaber_AaylaSecura.IconClose",
   "pooledCount": 0,
   "androidPooledCount": 0,
   "type": "Weapon",
@@ -64,8 +64,8 @@
       "lightsaberBlades": [
         {
           "$type": "TOR.LightsaberBlade, TheOuterRim",
-          "bladeLength": 0.8,
-          "kyberCrystal": "KyberCrystalGreen",
+          "bladeLength": 1.1,
+          "kyberCrystal": "KyberCrystalBronze",
           "collisionRef": "CollisionBlade",
           "crystalEjectRef": "CrystalEject",
           "saberBodyRef": "SaberBody",
@@ -76,9 +76,6 @@
           "whooshRef": "WhooshBlade"
         }
       ]
-    },
-    {
-      "$type": "TOR.ItemModuleDiscoverable, TheOuterRim"
     },
     {
       "$type": "ThunderRoad.ItemModuleAI, ThunderRoad",
@@ -145,15 +142,15 @@
     {
       "transformName": "HandleHilt",
       "interactableId": "ObjectHandleLightsaber",
-      "overrideHandPose": true,
-      "handPoseId": "HandleSchartzRing"
+      "overrideHandPose": false,
+      "handPoseId": ""
     }
   ],
   "effectHinges": [],
   "whooshs": [
     {
       "transformName": "WhooshBlade",
-      "effectId": "WhooshLightsaberGreen",
+      "effectId": "WhooshLightsaberOrange",
       "trigger": "Always",
       "stopOnSnap": true,
       "minVelocity": 1.0,

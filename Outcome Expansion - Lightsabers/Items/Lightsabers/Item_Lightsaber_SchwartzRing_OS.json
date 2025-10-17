@@ -29,7 +29,7 @@
   "slot": "Medium",
   "snapAudioContainerAddress": null,
   "overrideMassAndDrag": true,
-  "mass": 0.01,
+  "mass": 1.0,
   "drag": 1.0,
   "angularDrag": 0.05,
   "focusRegenMultiplier": 1.0,
